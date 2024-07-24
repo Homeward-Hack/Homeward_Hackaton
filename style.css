@@ -1,0 +1,98 @@
+*{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: "Montserrat", sans-serif;
+}
+body{
+                background-color: var(--prim);
+}
+:root{
+                --prim: #FFFFFF;
+                --sec: #1D1D1D;
+                --ter:#525252;
+                --tr1: #B1ADAD;
+
+}
+section{
+                padding: 1rem 4rem;
+}
+
+.explore{
+                justify-content: center;
+}
+.explore h2{
+                text-align: center;
+                font-weight: 600;
+                /* font-size: clamp(
+                                20px, 30px, 50px
+                ); */
+                font-size: calc(1.375rem + 1.5vw);
+                color: var(--sec);
+                margin: 1.5rem ;
+}
+.row{
+               display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+                gap: 2rem;
+}
+.column{
+background-color: #f5f5f5;
+justify-content: center;
+padding: 1rem 1rem;
+margin: 2rem 2rem;
+
+border-radius: 5px;
+}
+.column:hover{
+                box-shadow: 8px 8px #B1ADAD;
+}
+.column img{
+                padding: 1rem;
+                border-radius: 20px;
+                width: 100%;
+                height: auto;
+                transition: all 0.40s 
+}
+.column p{
+                padding: 0.5rem 0.9rem;
+}
+#description{
+                font-size: 16px;
+}
+#price{
+                font-weight: 600;
+}
+
+.choose-text{
+                padding: 2rem 2rem;
+                margin: 2rem 2rem;
+}
+
+.choose-text h2{
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 48.76px;
+                color: var(--sec);
+                padding: 1rem;
+}
+.choose-text p{
+                padding: 0rem 1rem;
+                width: 80%;
+                color: #525252;
+                line-height: 17.07px;
+                font-size: 14px;
+}
+
+.faq-container{
+                display: flex;
+                justify-content: space-between;
+}
+
+/* @media screen and (max-width: ) {
+
+
+                
+} */
+
+
