@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+  
 }
 body{
     background-color: var(--prim);
@@ -19,29 +20,25 @@ a{
     list-style-type: none;
     text-decoration: none;
 }
-header{
-  background-color: var(--sec);
-}
-
-nav{
+header nav{
+    background-color: var(--sec);
     display: flex;
-    width: 100%;
-    /* height: 145px; */
-    /* align-content: center; */
+  padding: 20px;
+   position: relative;
     justify-content: space-between;
-    padding: 1rem 0.9rem;
 }
-
 .logof img{
     width: 100px;
     height: auto;
     margin-left: 1rem;
 }
-
-.navlists{
+.navlists {
     display: flex;
-    list-style: none;
-    margin-top: 1rem;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.navlists li{
+                list-style-type: none;
 }
 .navlists li a{
     margin-left: 30px;
@@ -50,35 +47,13 @@ nav{
     justify-content: center;
     color: var(--tr2);
 }
-.btns{
-    display: flex;
-    justify-content: space-between;
-}
-button{
-    font-size: 16px;
-    padding: 7px 18px;
-    outline: none;
-    border: none;
-}
-.nav-btn{
-    /* margin-left: 30px;
-    /* display: inline-block; */
-   /* font-size: 0.95rem; */
-   font-weight: 500;
-   border-radius: 1.3rem;
-   /* text-transform: unset;
-   transition: all 0.3s ease-in-out;
-    padding: 0.75rem 2rem; */
-     column-gap: 0.5rem;
-     color: var(--sec); 
-}
 
-#contact{
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-weight: 600;
-    color: var(--tr2);
+button{
+                padding: 16px 20px;
+                border-radius: 5px;
+                border: none;
+                background-color: var(--tr2);
+                color: var(--sec);
 }
 #menu{
     display: none;
@@ -87,44 +62,98 @@ button{
     background-image: url("assets/hero.png");
     background-size: cover;
     background-position: 50%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 1rem;
+    flex-wrap: wrap;
+     width: 100%;
+    display: flex;
+    min-height: 100vh;
 }
-.hero h2{
-    font-size: clamp(1.5rem, 6vw, 4rem);
-    /* font-size: calc(1.375rem + 1.5vw); */
-    color: var(--sec);
-    text-align: center;
-    align-items: center;
-    margin: 0 19rem;
+.hero .hero-text {
+                width: 100%;
+                padding: 2rem 0;
+                text-align: center;
+                align-items: center;
 }
-.hero p{
-    /* color: var(--tr1); */
-    margin: 0 19rem;
-
+.hero-text h2{
+                color: var(--sec);   
+                font-size: calc(1.375rem + 1.5vw);
+                padding:  8rem 2rem;
+                margin-bottom: -6rem;
+}
+.hero-text p{
+                letter-spacing: px;
+                word-wrap: break-word;
+                word-spacing: 1px;
+                padding: 1rem 2rem;
+                color: var(--prim);
 }
 section{
-
     padding: 1rem 4rem;
 }
 .about{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 2rem 2rem;
 }
+.about-text{
+                padding: 2rem ;
+                margin-right: 9rem;
+                width: 100%;
 
+}
+.about-t {
+                color: var(--sec);
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 1rem;
+}
+.about-text h5{
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 1rem;
+}
+ .description{
+                font-weight: 600;
+                font-size: 16px;
+             margin-bottom: 1rem;
+                color: #757575;
+}
+.map {
+                width: 400px;
+                padding: 2rem;
+
+}
+.service{
+                display: flex;
+                justify-content: space-between;
+                padding: 2rem 2rem;
+}
+.service-text{
+                padding: 2rem ;
+                margin-right: 9rem;
+                width: 100%;
+}
+.service-p{
+                color: var(--sec);
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 1rem;      
+}
+.service-text h5{
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 1rem;
+}
+.service-img{
+                display: flex;
+                justify-content: space-between;
+}
 .explore{
     justify-content: center;
 }
 .explore h2{
     text-align: center;
     font-weight: 600;
-    /* font-size: clamp(
-        20px, 30px, 50px
-    ); */
     font-size: calc(1.375rem + 1.5vw);
     color: var(--sec);
     margin: 1.5rem ;
@@ -222,9 +251,9 @@ border-radius: 5px;
                 padding: 2rem;
                 text-align: center;
 }
-.faq img{
-    width: 200px;
-    height: 100px;
+.faq-image img{
+    width: 400px;
+    height: auto;
 }
 .faq-toggle {
 	background-color: transparent;
@@ -266,9 +295,7 @@ border-radius: 5px;
 .faq.active .faq-toggle .fa-angle-down {
 	display: none;
 }
-
 .call-to-action{
-   
     background-color: var(--sec);
     padding: 3rem 3rem;
     text-align: center;
@@ -279,6 +306,7 @@ border-radius: 5px;
 }
 .call-to-action h3{
     color: var(--tr2);
+    width: 100%;
     padding: 1rem 1rem;
     font-weight: 600;
     font-size: calc(1.005rem + 1.5vw);
@@ -314,44 +342,40 @@ input:active{
     border: none;
     border-radius: 7px;
 }
-
 footer{
-    background-color: var(--sec);
+                background-color: var(--sec);
 }
-footer .logo{
-    padding: 1rem 0 0 2rem;
+.logo-info{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(60px, auto));
+                gap: 3rem; 
+                padding: 2rem;
 }
-
-
-
-.con{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 1rem;
+.footer-logo{
+                justify-content: center;
 }
-.con ul li{
-    list-style-type: none;
+.footer-logo h5{
+                color: var(--tr2);
+                font-size: 16px;
 }
-.con ul li a{
-    text-decoration: none;
-    color: var(--tr2);
+.footer-logo p{
+color: var(--tr2);
 }
-.con ul li a:hover{
-    color: var(--ter);
+.discover{
+                margin-top: 2rem;
 }
-.contact{
-    color: var(--tr2);
-    display: block;
-    text-align: left;
+.discover h5{
+color: var(--tr2);
+font-size: 16px;
+
 }
-
-.contact p{
-    font-size: 20px;
+.category{
+                margin-top: 2rem;
 }
-
-
-
-
+.category h5{
+font-size: 16px;
+color: var(--tr2);
+}
 
 @media screen and (max-width:736px ) {
 .logof img{
@@ -377,6 +401,32 @@ footer .logo{
 .about{
     display: block;
 }
+.hero{
+                display: block;
+                justify-content: center;
+}
+.faq-container{
+                display: block;
+}
+.faq{
+                justify-content: center;
+}
+.faq-image img{
+                display: none;
+}
+.service{
+                display: block;
+                justify-content: center;
+}
+.service-img{
+                display: block;
+}
+
+form{
+display: block;
+}
+
+
 }
 
 
