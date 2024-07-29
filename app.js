@@ -8,7 +8,11 @@ toggles.forEach(toggle => {
 	});
 });
 
-
+menu = document.getElementById("menu");
+                                menu.onclick = function(){
+                                                navBar = document.querySelector(".navlists");
+                                                navBar.classList.toggle("active");
+                                }
 // Property API 
 
 const url = "hi"
@@ -33,7 +37,7 @@ const propertyC = [
 		description : "",
 		price:  150000,
 		image :{
-			main: "",
+			main: "assets/prop3.png",
 			sub: "",
 			others: ""
 		},
@@ -46,7 +50,7 @@ const propertyC = [
 		description: "",
 		price: 150000,
 		image :{
-			main: "",
+			main: "assets/prop2.png",
 			sub: "",
 			others: ""
 		},
@@ -60,7 +64,7 @@ const propertyC = [
 		description: "",
 		price: 150000,
 		image :{
-			main: "/assets/",
+			main: "assets/prop1.png",
 			sub: "",
 			others: ""
 		},
@@ -73,7 +77,7 @@ const propertyC = [
 			description : "",
 			price:  150000,
 			image :{
-				main: "",
+				main: "assets/prop2.png",
 				sub: "",
 				others: ""
 			},
@@ -86,7 +90,7 @@ const propertyC = [
 			description: "",
 			price: 150000,
 			image :{
-				main: "",
+				main: "assets/prop1.png",
 				sub: "",
 				others: ""
 			},
@@ -99,7 +103,7 @@ const propertyC = [
 			description: "",
 			price: 150000,
 			image :{
-				main: "/assets/",
+				main: "assets/prop3.png",
 				sub: "",
 				others: ""
 			},
@@ -116,6 +120,7 @@ function displayProperties(propertyC) {
 		propertyDiv.classList.add("pro-column");
 		propertyDiv.innerHTML =  
 		`
+		<img src="${ property.image.main}"> 
 		<p> ${property.title}</p>
 		<p> ${property.location}</p>
 		<h5 class"price">${property.price}</h5>
@@ -138,7 +143,7 @@ const rent = [
 		description: "",
 		price: 150000,
 		image :{
-			main: "/assets/",
+			main: "assets/prop2.png",
 			sub: "",
 			others: ""
 		},
@@ -150,7 +155,7 @@ const rent = [
 			description: "",
 			price: 150000,
 			image :{
-				main: "/assets/",
+				main: "assets/prop1.png",
 				sub: "",
 				others: ""
 			},
@@ -163,7 +168,7 @@ const rent = [
 		description: "",
 		price: 150000,
 		image :{
-			main: "/assets/",
+			main: "assets/prop2.png",
 			sub: "",
 			others: ""
 		},
@@ -175,7 +180,7 @@ const rent = [
 			description: "",
 			price: 150000,
 			image :{
-				main: "/assets/",
+				main: "assets/prop1.png",
 				sub: "",
 				others: ""
 			},
@@ -187,7 +192,7 @@ const rent = [
 	description: "",
 	price: 150000,
 	image :{
-		main: "/assets/",
+		main: "assets/prop3.png",
 		sub: "",
 		others: ""
 	},
@@ -204,7 +209,7 @@ function displayRents(rent) {
 		rentDiv.classList.add("rent-column");
 		rentDiv.innerHTML =  
 		`
-		<img src="${ rents.image}"> 
+		<img src="${ rents.image.main}"> 
 		<p> ${rents.title}</p>
 		<p> ${rents.location}</p>
 		<h5 class"price">#${rents.price}</h5>
@@ -228,7 +233,7 @@ const sales = [
 		price: 25000,
 		amenities: "Spacious Car Park, Security ,  ",
 		image: {
-			main: "",
+			main: "assets/prop1.png",
 			sub: "",
 			others: ""
 		},
@@ -240,7 +245,7 @@ const sales = [
 		price: 125000,
 		amenities: "Spacious Car Park, Security Furnished Kitchen ,  ",
 		image: {
-			main: "",
+			main: "assets/prop2.png",
 			sub: "",
 			others: ""
 		},
@@ -251,7 +256,7 @@ const sales = [
 		price: 25000,
 		amenities: "Spacious Car Park, Security ,  ",
 		image: {
-			main: "",
+			main: "assets/prop3.png",
 			sub: "",
 			others: ""
 		},
@@ -269,7 +274,7 @@ function displaySales(sales) {
 		saleDiv.innerHTML =  
 		`
 		<a>
-		<img src="${ sale.image}"> 
+		<img src="${ sale.image.main}"> 
 		<p > ${sale.title}</p>
 		<p> ${sale.location}</p>
 		<h5 class"price">#${sale.price}</h5>

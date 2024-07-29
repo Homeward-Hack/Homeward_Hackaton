@@ -59,7 +59,7 @@ button{
     display: none;
 }
 .hero{
-    background-image: url("assets/hero.png");
+    background-image: url("assets/hero1.jpg");
     background-size: cover;
     background-position: 50%;
     justify-content: center;
@@ -377,13 +377,39 @@ font-size: 16px;
 color: var(--tr2);
 }
 
-@media screen and (max-width:736px ) {
+@media screen and (max-width:900px ) {
 .logof img{
     width: 80px;
     margin-left: 10px;
 }
 .navlists{
-    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--sec);
+    color: var(--tr2);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navlists.active{
+    height: 250px;
+}
+.navlists {
+    display: block;
+    width: 100vw;
+    margin: 40px auto 40px auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navlists.active{
+    opacity: 1;
+}
+.navlists li a{
+    color: var(--tr2);
+    margin-bottom: 120px;    
 }
 #contact{
     display: none;
@@ -393,6 +419,7 @@ color: var(--tr2);
     align-content: center;
     font-size: 24px;
     color: var(--tr2);
+    cursor: pointer;
 }
 .nav-btn{
     display: none;
@@ -425,19 +452,13 @@ color: var(--tr2);
 form{
 display: block;
 }
-
-
 }
-
-
 /* Properties.html */
-
 .properties h2{
     text-align: center;
     color: var(--sec);
     padding: 2rem ;
 }
-
 .pro-row{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
@@ -495,7 +516,6 @@ border-radius: 5px;
     color: var(--sec);
     padding: 2rem ;
 }
-
 .sale-row{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
