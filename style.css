@@ -3,11 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-<<<<<<< HEAD
-    scroll-behavior: smooth;
-=======
   
->>>>>>> d3816953f6070d38e5bd1d668b55a77ad6c0c918
 }
 body{
     background-color: var(--prim);
@@ -61,6 +57,7 @@ button{
 }
 #menu{
     display: none;
+    cursor: pointer;
 }
 .hero{
     background-image: url("assets/hero1.jpg");
@@ -380,8 +377,33 @@ font-size: 16px;
 font-size: 16px;
 color: var(--tr2);
 }
+.quick{
+    margin-top: 2rem;
+}
+.quick h5{
+    font-size: 16px;
+    color: var(--tr2);
+}
+.estates{
+    margin-top: 2rem;
+}
+.estates h5{
+    font-size: 16px;
+    color: var(--tr2);
+}
+#footer-links{
+    margin-top: 2rem;
+}
 
-@media screen and (max-width:900px ) {
+#footer-links h5{
+    font-size: 16px;
+    color: var(--tr2);
+}
+
+@media screen and (max-width:1023px ) {
+    body{
+        overflow-x: hidden;
+    }
 .logof img{
     width: 80px;
     margin-left: 10px;
@@ -431,6 +453,9 @@ color: var(--tr2);
  
 .about{
     display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .hero{
                 display: block;
@@ -448,6 +473,8 @@ color: var(--tr2);
 .service{
                 display: block;
                 justify-content: center;
+                text-align: center;
+                align-items: center;
 }
 .service-img{
                 display: block;
@@ -455,6 +482,34 @@ color: var(--tr2);
 
 form{
 display: block;
+justify-content: center;
+padding: 20px;
+align-items: center;
+}
+ #input{
+    width: 100%; 
+    margin-left: -0px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.choose-text{
+    align-items: center;
+    text-align: center;
+}
+
+.call-to-action{
+    justify-content: center;
+    align-items: center;
+    display: block;
 }
 }
 /* Properties.html */

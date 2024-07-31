@@ -7,8 +7,6 @@ toggles.forEach(toggle => {
 		toggle.parentNode.classList.toggle('active');
 	});
 });
-<<<<<<< HEAD
-=======
 
 menu = document.getElementById("menu");
                                 menu.onclick = function(){
@@ -289,4 +287,3 @@ function displaySales(sales) {
 document.addEventListener("DOMContentLoaded", () => {
 	displaySales(sales);
 } );
->>>>>>> d3816953f6070d38e5bd1d668b55a77ad6c0c918
