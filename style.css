@@ -3,7 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+<<<<<<< HEAD
+    scroll-behavior: smooth;
+=======
   
+>>>>>>> d3816953f6070d38e5bd1d668b55a77ad6c0c918
 }
 body{
     background-color: var(--prim);
