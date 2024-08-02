@@ -289,4 +289,4 @@ function displaySales(sales) {
 document.addEventListener("DOMContentLoaded", () => {
 	displaySales(sales);
 } );
-
+>>>>>>> d3816953f6070d38e5bd1d668b55a77ad6c0c918
